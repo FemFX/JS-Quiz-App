@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="text-center">Quiz</h1>
+      </nav>
+    </header>
+
+    <div class="container mt-5">
+      <div class="question">
+        <div class="jumbotron"></div>
+      </div>
+      <button class="btn btn-block" onclick="getResult(true, this)">
+        Yes
+      </button>
+      <button class="btn btn-block" onclick="getResult(false, this)">
+        No
+      </button>
+    </div>
+    <div class="score"></div>
+  </body>
+</html>
